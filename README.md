@@ -7,4 +7,4 @@ Primary findings related to the identification of coexisting Morpho-Biotype in P
 
 The GEO SuperSeries can be found here: [GSE209952](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209952) 
 
-Count matrices, meta data tables and R objects useful for the data analysys can be found here:  10.5281/zenodo.12680172
+Count matrices, meta data tables and R objects useful for the data analysys are deposited on Zenodo.  DOI: 10.5281/zenodo.12680172
