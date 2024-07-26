@@ -1,0 +1,20 @@
+name: pscan
+channels:
+  - https://repo.continuum.io/pkgs/free
+  - salilab
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - gsl=2.4=h2c0fa48_2
+  - libblas=3.9.0=12_linux64_openblas
+  - libcblas=3.9.0=12_linux64_openblas
+  - libgcc-ng=11.2.0=h1d223b6_11
+  - libgfortran-ng=11.2.0=h69a702a_11
+  - libgfortran5=11.2.0=h5c6108e_11
+  - libgomp=11.2.0=h1d223b6_11
+  - libopenblas=0.3.18=pthreads_h8fe5266_0
+  - system=5.8=2
+prefix: /hpcnfs/home/ieo5245/.conda/envs/pscan
