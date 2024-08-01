@@ -43,8 +43,8 @@ library(gridExtra)
 library(infercnv)
 
 #  
-dataset_folder = "/.../EGAD00010001811/" 
-Output_folder = ".../scRNAseq_output/"
+dataset_folder <- "/.../EGAD00010001811/" 
+Output_folder <- ".../scRNAseq_output/"
 
 SAVE_IN <- paste0(Output_folder,"/Step1/")
 dir.create(SAVE_IN)
@@ -95,8 +95,8 @@ Data.list <- lapply(X = Data.list, FUN = SCTransform, verbose = FALSE)  #vars.to
 
 ##Check cell cycle markers and MT percent as cofounding factors
 cc.genes <- read.delim(".../Tirosh_2015_CellCycleMarkers.txt", header=TRUE) 
-s.genes = cc.genes[which(cc.genes$CellCycle=="S"),"Gene"]
-g2m.genes = cc.genes[which(cc.genes$CellCycle=="G2M"),"Gene"]
+s.genes <- cc.genes[which(cc.genes$CellCycle=="S"),"Gene"]
+g2m.genes <- cc.genes[which(cc.genes$CellCycle=="G2M"),"Gene"]
 cc <- lapply(X = Data.list, FUN = CellCycleScoring, s.features = s.genes, g2m.features = g2m.genes, set.ident = TRUE)
 
 pdf(paste0(SAVE_IN,"/Normalization/","/RidgePlot_cellCycle.pdf"),width=10,height=10)
@@ -259,8 +259,8 @@ set.seed(12345)
 infercnv_obj <- lapply(X = Cluster_Data, FUN = function(x) {
   w <- unique(x$Sample.ID)
   #dir.create(paste0(SAVE_IN,"/inferCNV/",w))
-  counts_matrix = GetAssayData(x, slot="counts")
-  sample_annotation = as.data.frame(Idents(object = x),drop=F)
+  counts_matrix <- GetAssayData(x, slot="counts")
+  sample_annotation <- as.data.frame(Idents(object = x),drop=F)
   x <- CreateInfercnvObject(raw_counts_matrix=counts_matrix, annotations_file=sample_annotation, delim="\t", gene_order_file=gene_file, ref_group_names=ref[[w]])
   x <- infercnv::run(x,
     cutoff=0.1, # cutoff=1 works well for Smart-seq2, and cutoff=0.1 works well for 10x Genomics  ###Genes with a mean number of counts across cells will be excluded
@@ -298,7 +298,7 @@ names(cluster.ids) <- names(Data.list)
 Cluster_Data2 <- lapply(X = Cluster_Data, FUN = function(x) {
   w <- unique(x$Sample.ID)
   names(cluster.ids[[w]]) <- levels(x)
-  x = RenameIdents(x,cluster.ids[[w]])  
+  x <- RenameIdents(x,cluster.ids[[w]])  
   #x[["celltype"]] <- Idents(object = x)
 })   
 
