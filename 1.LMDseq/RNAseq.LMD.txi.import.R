@@ -40,10 +40,10 @@ library("GenomicFeatures")
 library("rtracklayer")
 
 #  
-Output_folder = ".../Output/"                                              
-UsefulData = ".../UsefulData/"
+Output_folder <- ".../Output/"                                              
+UsefulData <- ".../UsefulData/"
 
-Counts_folder  <- paste0(Output_folder, "/6_Counts_folder/")
+Counts_folder <- paste0(Output_folder, "/6_Counts_folder/")
 dir.create(Counts_folder, showWarnings = FALSE)
 
 reference_folder <- paste0(UsefulData, "/.../hg38_annotation/")
