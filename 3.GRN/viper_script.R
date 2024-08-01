@@ -38,7 +38,7 @@ library("Rgraphviz")
 
 
 #
-Output_folder=".../Output/"
+Output_folder <- ".../Output/"
 ARACNE <- paste0(Output_folder,"/ARACNE_output/")
 
 SAVE_IN <- paste0(Output_folder,"/viper/")
@@ -84,7 +84,7 @@ for(pp in seq_along(Targets)){
     #Generating the gene expression signatures(GES)
     LOOG_DEG <- DEG[grep(paste0(name,"_vs_Rest"),DEG)] # MODIFY
     cat("Import DEGS ",name,"\n")
-    file=read.delim(LOOG_DEG,sep="\t",row.names=1)
+    file <- read.delim(LOOG_DEG,sep="\t",row.names=1)
     file <- file[order(as.numeric(as.character(file$padj)),decreasing=F),]
     rownames(file) <- file$Symbol
     sel_up <- file[which(as.numeric(as.character(file$log2FoldChange)) >= log2(2) & as.numeric(as.character(file$padj)) <= 0.01),]
