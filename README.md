@@ -1,5 +1,5 @@
-# PDAC_Morpho-Biotype_Study
-A repository of code for data analysis/processing generated for the PDAC Morpho-Biotype Study.
+# PDAC Morpho-Biotype classification by high-resolution laser microdissection and transcriptome profiling
+A repository of code for data analysis/processing generated for the study of PDAC Morpho-Biotype.
 
 The study was performed at the Transcriptional Control in Cancer Lab at European Institute of Oncology (IEO). These data contains transcriptional profiles of multiple tumor areas (200-500 cells) dissected by Laser Micro-dissection (LMD) from primary patients affected by Pancreatic Ductal Adenocarcinoma (PDAC).
 
