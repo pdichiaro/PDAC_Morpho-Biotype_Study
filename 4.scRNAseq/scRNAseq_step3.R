@@ -43,8 +43,8 @@ library(gridExtra)
 library(harmony)
 
 #  
-Output_folder = ".../scRNAseq_output/"
-signature = ".../Gene_Signature/"
+Output_folder <- ".../scRNAseq_output/"
+signature <- ".../Gene_Signature/"
 
 SAVE_IN <- paste0(Output_folder,"/Step3/")
 dir.create(SAVE_IN)
@@ -54,7 +54,7 @@ dir.create(SAVE_IN)
 integrated <- read_rds(paste0(Output_folder,"/Step2/Seurat_Harmony.rds"))
 
 Data_tumor <- integrated
-#norm.counts = GetAssayData(object = Data_tumor, slot = "data")
+#norm.counts <- GetAssayData(object = Data_tumor, slot = "data")
 #write.table(norm.counts, file=paste0(SAVE_IN,"/norm.count.matrix_Harmony.txt"), quote=F, sep="\t") 
 
 
@@ -72,7 +72,7 @@ for(sig in files){
 	name <- gsub(".txt","",basename(sig))
 	#dir.create(paste0(SAVE_IN,"/",name))
 	cat("processing Gene Signature: ",name,"\n")
-	DF = read.delim(sig,sep="\t",stringsAsFactors=FALSE,check.names=FALSE)
+	DF <- read.delim(sig,sep="\t",stringsAsFactors=FALSE,check.names=FALSE)
 	for(ll in unique(DF[,"cell_type"])){
 		cat(" Processing :",ll,"\n")
     	features <- list(c(DF[DF[,"cell_type"] == ll,"Gene"]))
@@ -100,7 +100,7 @@ co=10
 Data_tumor <- FindNeighbors(Data_tumor, reduction = "harmony", dims = 1:co, k.param = 50, verbose = FALSE)      
 Data_tumor <- FindClusters(Data_tumor, resolution=seq(0.1,0.8,0.1), algorithm = 4, verbose = FALSE)   # resolution=seq(0.2,1.2,0.2)
 
-resolution=c(paste0("SCT_snn_res.",seq(0.1,0.8,0.1)))
+resolution <- c(paste0("SCT_snn_res.",seq(0.1,0.8,0.1)))
 
 pdf(paste0(SAVE_IN,"/Clustering/","/UMAP_tumor_seq.pdf")) 
 lapply(X = resolution, FUN = function(x) {
