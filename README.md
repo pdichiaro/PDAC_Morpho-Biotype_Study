@@ -10,6 +10,7 @@ The GEO SuperSeries can be found here: [GSE209952](http://www.ncbi.nlm.nih.gov/g
 
 Count matrices, meta data tables and R objects useful for the data analysis are deposited on Zenodo.  DOI: 10.5281/zenodo.12680172
 
+![Moprho_Biotypes](https://github.com/user-attachments/assets/c56d5d14-b2c6-4791-9217-b7f39741e7c7)
 
 # Directory structure
 ```
