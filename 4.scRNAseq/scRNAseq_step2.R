@@ -44,8 +44,8 @@ library(gridExtra)
 library(harmony)
 
 #  
-dataset_folder = "/.../EGAD00010001811/" 
-Output_folder = ".../scRNAseq_output/"
+dataset_folder <- "/.../EGAD00010001811/" 
+Output_folder <- ".../scRNAseq_output/"
 
 SAVE_IN <- paste0(Output_folder,"/Step2/")
 dir.create(SAVE_IN)
@@ -64,7 +64,7 @@ samples <- gsub("_",".",samples)
 # create seurat object:
 h5_read <- lapply(h5_files, Read10X_h5)
 h5_seurat <- lapply(h5_read, function(x) CreateSeuratObject(x,min.cells = 3, min.features = 200))
-Data  <- merge(h5_seurat[[1]], y = h5_seurat[2:length(h5_seurat)], add.cell.ids = samples, project = "scRNAseq_Chan")
+Data <- merge(h5_seurat[[1]], y = h5_seurat[2:length(h5_seurat)], add.cell.ids = samples, project = "scRNAseq_Chan")
 
 sample_metadata <- as.data.frame(Data[["orig.ident"]],drop=F)
 sample_metadata$Sample.ID <- sub("\\_.*","",rownames(sample_metadata))
