@@ -29,11 +29,10 @@
 #PATH
 export _JAVA_OPTIONS="-Xmx15G"
 
-Aracne_PATH=.../ARACNe-AP-master/dist/
+Aracne_PATH=.../3.GRN/ARACNe-AP-master/dist/
 OUT_FOLDER=/3.GRN/
-MATRIX=.../Matrix_rLog_Subgroups.txt 
-TF=.../TF.txt
-
+MATRIX=.../3.GRN/Matrix_rLog_Subgroups.txt 
+TF=.../3.GRN/TF.txt
 
 
 mkdir $OUT_FOLDER/ARACNE_output/
