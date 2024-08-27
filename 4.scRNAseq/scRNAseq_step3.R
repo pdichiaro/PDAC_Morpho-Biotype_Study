@@ -43,7 +43,7 @@ library(gridExtra)
 library(harmony)
 
 #  
-Output_folder <- ".../scRNAseq_output/"
+Output_folder <- "4.scRNAseq/"
 signature <- ".../Gene_Signature/"
 
 SAVE_IN <- paste0(Output_folder,"/Step3/")
