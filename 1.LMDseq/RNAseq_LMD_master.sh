@@ -31,7 +31,7 @@
 ##########
 Cores=10
 mem=15G
-UsefulData=/.../UsefulData/
+UsefulData=/1.LMDseq/UsefulData/
 OUT_FOLDER=/.../Output/
 strandness=reverse
 ##########
