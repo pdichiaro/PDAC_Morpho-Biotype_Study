@@ -44,7 +44,7 @@ library('rtracklayer')
 reference_folder <- ".../reference_folder/"
 Output_folder <- ".../Output/"
 
-SAVE_IN <- paste0(Output_folder,"/MOTIFS/PROMOTERS/")
+SAVE_IN <- paste0(Output_folder,"/PROMOTERS/")
 dir.create(SAVE_IN)
 
 #
