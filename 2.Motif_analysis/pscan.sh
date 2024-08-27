@@ -32,8 +32,8 @@ export PATH=.../pscan:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/.../.conda/envs/pscan/lib
 
 CORES=8
-MOTIF_path=.../PWMs/
-INPUT=.../PROMOTERS/
+MOTIF_path=.../2.Motif_analysis/PWMs/
+INPUT=.../2.Motif_analysis/PROMOTERS/
 OUT_FOLDER=.../Output/
 
 mkdir $OUT_FOLDER/MOTIFS
