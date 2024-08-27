@@ -41,7 +41,7 @@ library("rtracklayer")
 
 #  
 Output_folder <- ".../Output/"                                              
-UsefulData <- ".../UsefulData/"
+UsefulData <- "1.LMDseq/UsefulData/"
 
 Counts_folder <- paste0(Output_folder, "/6_Counts_folder/")
 dir.create(Counts_folder, showWarnings = FALSE)
