@@ -45,7 +45,7 @@ library(harmony)
 
 #  
 dataset_folder <- "/.../EGAD00010001811/" 
-Output_folder <- ".../scRNAseq_output/"
+Output_folder <- "4.scRNAseq/"
 
 SAVE_IN <- paste0(Output_folder,"/Step2/")
 dir.create(SAVE_IN)
