@@ -38,7 +38,7 @@ library("Rgraphviz")
 
 
 #
-Output_folder <- ".../Output/"
+Output_folder <- "3.GRN/"
 ARACNE <- paste0(Output_folder,"/ARACNE_output/")
 
 SAVE_IN <- paste0(Output_folder,"/viper/")
