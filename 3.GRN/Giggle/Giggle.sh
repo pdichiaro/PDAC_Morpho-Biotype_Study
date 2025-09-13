@@ -35,7 +35,6 @@ conf_path=".../3.GRN/Giggle/"
 OUT_FOLDER="/3.GRN/Giggle/"
 #
 
-source activate giggle #######
 mkdir $OUT_FOLDER/Results
 
 
