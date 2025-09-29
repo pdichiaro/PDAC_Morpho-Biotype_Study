@@ -8,6 +8,9 @@ Primary findings related to the identification of coexisting Morpho-Biotypes in 
 
 The GEO SuperSeries can be found here: [GSE209952](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209952) 
 
+See the data note publication for a detailed description of the datasets and analyses: 
+[Di Chiaro et al. Gigascience 2025](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf101/8248408)
+
 Count matrices, meta data tables and R objects useful for the data analysis are deposited on Zenodo.
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12680172.svg)](https://doi.org/10.5281/zenodo.12680172)
 
