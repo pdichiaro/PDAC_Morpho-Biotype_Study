@@ -7,7 +7,7 @@
 ##
 ## Description: 
 #~
-## This tool will run GIGGLE for the reconstruction of GRNs using the gene expression matrix (LMD-seq)
+## This tool will run GIGGLE to build an index from ChIP-seq data and assess the enrichment of input promoter regions.
 ##
 ## Authors: 
 #~
