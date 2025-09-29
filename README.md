@@ -40,5 +40,6 @@ Count matrices, meta data tables and R objects useful for the data analysis are 
 |   └─ scRNAseq_step1.R: Analysis code to create Seurat object and analyse data from multiple PDAC patients 
 |   └─ scRNAseq_step2.R: Analysis code to harmonize multiple scRNAseq datasets using Harmony
 |   └─ scRNAseq_step3.R: Analysis code to cell cluster and score tumor cells in integrated Seurat object
+|   └─ scRNAseq_step3b.R: Analysis code to score tumor cells using alternative methods in integrated Seurat object
 |   └─ session_R_info.txt: txt file collecting info of R session related to the scripts above
 ```
